@@ -1,3 +1,3 @@
 # lafresh
-Discord-like application
+Discord-like application/n
 Elle est fraîche

@@ -7,7 +7,7 @@
 	<input type="text" id="login" name="login" value="">
 	<label for="password">Password&nbsp;</label>
 	<input type="password" id="password" name="password" value="">
-	<a href="registers_form.php">Sign Up</a>
+	<a href="?action=register_form">Sign Up</a>
 	<input type="submit" value="Login">
 	<input type="checkbox" id="remember">
 	<label for="remember">Remember me</label>

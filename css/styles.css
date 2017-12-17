@@ -2,7 +2,6 @@ html, body{
   margin: 0;
   padding: 0;
   font-family: Verdana, Arial, Helvetica, sans-serif;
-  height: 100%;
 }
 h1,h2{
   text-align: center;
@@ -11,7 +10,6 @@ h1,h2{
 
 a, a:hover, a:active, a:focus{
   text-decoration: none;
-  color: white;
 }
 
 img{
@@ -36,10 +34,24 @@ img{
     margin: auto;
 }
 
-.fond_home{
+#fond_home{
   background-image: url("../img/montagne.jpeg");
+}
+
+#fond_login{
+  background-image: url("../img/donald.jpg");
+}
+
+#fond_register{
+    background-image: url("../img/donald.jpg");
+}
+
+
+
+.fond{
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   width: 100%;
   height: 100vh;
   margin: 0;
@@ -47,14 +59,17 @@ img{
   position: absolute;
 }
 
-.home{
+.flex{
+  display: flex;
+}
+
+.container{
   border-radius: 5px;
   background-color: hsla(0, 0%, 100%, 0.59);
   padding: 20px;
-  margin: 10% auto;
+  margin: 5% auto;
   max-width: 550px;
   font-size: 1rem;
-  display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -69,6 +84,7 @@ img{
 
 
 .login_page{
+  color: white;
   display: inherit;
   font-family: Verdana, Arial, Helvetica, sans-serif;
   font-size: 18px;
@@ -96,15 +112,16 @@ border-color: #db9090;
 }
 
 .register{
-  color:black;
-  background-color: white;
-  width: 49%;
-  border:1px solid #EB9C9C;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border-radius: 4px;
+  color: black;
+  display: inline-block;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 15px 30px;
+  margin: 20px 10px;
+  border-radius: 3px;
   cursor: pointer;
-  text-decoration: none;
+  border: 3px solid #c57676;
+  text-align: center
 }
 
 .logo{
@@ -124,16 +141,32 @@ input[type=text], input[type=email], input[type=password] {
 }
 
 input[type=submit] {
-    width: 49%;
-    background-color: #EB9C9C;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+
+  display: inline-block;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  padding: 15px 30px;
+  margin: 20px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #c57676;
+  border: 3px solid #c57676;
+  text-align: center;
 }
 
 input[type=submit]:hover {
     background-color: #D17F7F;
+}
+
+.center{
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 575px){
+
+
+  
 }

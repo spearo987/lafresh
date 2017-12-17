@@ -1,9 +1,6 @@
-<h1>Lafresh</h1>
-
-<h2>Inscription</h2>
-
-<div class="login">
-
+<div class="fond" id="fond_register">
+<div class="container">
+<img src="./img/logo.png"></img>
 <form class="signup-form" action="?action=register" method="post" enctype="multipart/form-data">
 				<input type="hidden" name="MAX_FILE_SIZE" value="20000000" />
 
@@ -18,8 +15,9 @@
 
 				<label for="p2">Confirmation du mot de passe</label>
 				<input type="password" id="p2" name="pass2" required="required"/>
-
-				<a href="#" >Lost Password</a>
-				<input type="submit" value="Et hop !" />
+				<div class="center">
+				<input type="submit" value="S'enregistrer" />
+			</div>
 		</form>
-</div
+</div>
+</div>

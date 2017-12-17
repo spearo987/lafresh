@@ -1,5 +1,5 @@
-	<div class="fond_home">
-		<div class="home">
+	<div class="fond" id="fond_home">
+		<div class="container flex">
 			<div class="message_home">
 				<?= $welcome_message ?>
 				<a href="?action=login_form" value="Login" class="login_page">Se connecter</a>

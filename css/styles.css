@@ -1,0 +1,139 @@
+html, body{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  height: 100%;
+}
+h1,h2{
+  text-align: center;
+  margin: 0;
+}
+
+a, a:hover, a:active, a:focus{
+  text-decoration: none;
+  color: white;
+}
+
+img{
+  display: block;
+  max-width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#checkbox{
+  width: 49%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+#s{
+  color: black;
+  width: 49%;
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+.fond_home{
+  background-image: url("../img/montagne.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.home{
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 100%, 0.59);
+  padding: 20px;
+  margin: 10% auto;
+  max-width: 550px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.message_home{
+  padding: 20px;
+  text-align: left;
+  color: black;
+}
+
+
+
+.login_page{
+  display: inherit;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin: 20px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  background: #c57676;
+  border: 3px solid #c57676;
+  text-align: center
+}
+
+.login_page:hover{
+background: #db9090;
+border-color: #db9090;
+}
+
+.login{
+  border-radius: 5px;
+   background-color: #f2f2f2;
+   padding: 20px;
+  margin: 10% auto;
+  max-width: 500px;
+  font-size: 1rem;
+}
+
+.register{
+  color:black;
+  background-color: white;
+  width: 49%;
+  border:1px solid #EB9C9C;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logo{
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6),
+              0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+input[type=text], input[type=email], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 49%;
+    background-color: #EB9C9C;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #D17F7F;
+}

@@ -1,15 +1,25 @@
+
+
 <h1>Lafresh</h1>
 
 <h2>Login</h2>
 
+<div class="login">
 <form class="signin-form" action="?action=login" method="post" name="login">
-	<label for="login">Login&nbsp;</label>
-	<input type="text" id="login" name="login" value="">
+	<label for="username">Login&nbsp;</label>
+	<input type="text" id="login" name="username" value="">
+
 	<label for="password">Password&nbsp;</label>
 	<input type="password" id="password" name="password" value="">
-	<a href="?action=register_form">Sign Up</a>
+
+	<button class="register"><a href="?action=register_form" value="Register">Register</a></button>
 	<input type="submit" value="Login">
-	<input type="checkbox" id="remember">
+
+<div id="checkbox">
+	<input type="checkbox" id="remember" >
 	<label for="remember">Remember me</label>
-	<a href="signup.php">Lost Password</a>
+</div>
+
+	<a href="signup.php" id="s">Lost Password</a>
 </form>
+</div>

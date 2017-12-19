@@ -1,5 +1,5 @@
 <?php
-	require_once("../config/config.php");
+	require_once("./config/config.php");
 
 
 	function	myQuery($query)
@@ -19,9 +19,9 @@
 		$result = myQuery($query) or die (mysqli_error($link));
 		if (!$result)
 			return false;
+
 		$tab_res = mysqli_fetch_assoc($result);
 		return $tab_res;
-
 	}
 
 	function	myFetchAllAssoc($query)
@@ -38,4 +38,45 @@
 			$tab_res[] = $array;
 		return $tab_res;
 	}
+
+	function mySave($query)
+	{
+		global $link;
+
+		$result = myQuery($query) or die (mysqli_error($link));
+
+		if(!$result) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
+
+	function mySaveId($query)
+	{
+		global $link;
+
+		$result = mySave($query) or die (mysqli_error($link));
+	
+		if(!$result) {
+			return false;
+		}
+		else {
+			return mysqli_insert_id($link);
+		}
+	}
+
+	// Test insert générique avec prepare / execute
+	// function myColumnDataTypes($table_name)
+	// {
+	// 	global $link;
+  //
+	// 	$query = "SELECT COLUMN_NAME, DATA_TYPE FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA = '".DB_DATABASE."' AND TABLE_NAME = '".$table_name."'";
+	// 	$tab_res = myFetchAssoc($query);
+  //
+	// 	return $tab_res;
+	// }
+
+
 ?>

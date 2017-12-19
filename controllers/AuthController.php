@@ -43,20 +43,36 @@ elseif ($action == 'login')
 // Affichage du formulaire d'inscription
 elseif ($action == 'register_form')
 {
+  if(isset($_GET['err']))
+  {
+    if ($_GET['err'] == 'errMdp')
+    {
+      $err_message = "Pas les même mot de passe";
+    }
 
+  }
 }
 // Action d'inscription
 elseif ($action == 'register')
 {
+
   if(isset($_POST['username']) && isset($_POST['mail']) && isset($_POST['password']) && isset($_POST['verify_password']))
   {
+
     $username = trim($_POST['username']);
     $mail = trim($_POST['mail']);
     $password = trim($_POST['password']);
     $hashed_password = password_hash($password, PASSWORD_DEFAULT);
     $verify_password = password_hash(trim($_POST['verify_password']), PASSWORD_DEFAULT);
 
-    $registering_user = new User();
+    if($_POST['password'] == $_POST['verify_password'])
+    {
+      $registering_user = new User();
+    }
+    else
+    {
+     header('Location: ?action=register_form&err=errMdp');
+    }
     if($registering_user->register($username, $mail, $hashed_password))
     {
       $register_message = 'Merci pour votre inscription !';

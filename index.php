@@ -1,7 +1,9 @@
 <?php
 require_once('tools/tools.php');
+require_once('tools/dbtools.php');
 // ROUTING
 require_once('config/routes.php');
+
 if (empty($_GET['action']))
 	$action = 'home';
 else

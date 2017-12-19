@@ -8,13 +8,12 @@
   <title><?php echo ucfirst($action); ?></title>
 </head>
 <body>
+  <?php if(isset($_SESSION)){ ?>
     <header>
-        <?php if(isset($_SESSION)){ ?>
             <a href="?action=chat_home"><img src="./img/logo.png"></img></a>
-        <?php } else { ?>
-            <a href="?action=home"><img src="./img/logo.png"></img></a>
-        <?php } ?>
+
     </header>
+    <?php }?>
 
     <?php if(isset($_SESSION)){ ?>
     <nav>
